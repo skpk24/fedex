@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<entity-engine-xml>
+
+
+
+    <Party partyId="FEDEX_RT" partyTypeId="PARTY_GROUP" statusId="PARTY_ENABLED"/>
+    <PartyGroup partyId="FEDEX_RT" groupName="Federal Express"/>
+    <PartyRole partyId="FEDEX_RT" roleTypeId="CARRIER"/>
+    <PartyStatus partyId="FEDEX_RT" statusId="PARTY_ENABLED" statusDate="2001-01-01 12:00:00.0"/>
+    
+    
+    <ShipmentMethodType description="FedEx 2Day®" shipmentMethodTypeId="FEDEX_2_DAY"/>
+    <!-- ShipmentMethodType description="FedEx 2Day® A.M." shipmentMethodTypeId="FEDEX_2_DAY_AM"/>
+    <ShipmentMethodType description="FedEx Custom Critical Air" shipmentMethodTypeId="CSTM_CRTL_CHR_AR"/>
+    <ShipmentMethodType description="FedEx Custom Critical Air Expedite" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EX"/>
+    <ShipmentMethodType description="FedEx Custom Critical Air Expedite Exclusive Use" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXU"/>
+    <ShipmentMethodType description="FedEx Custom Critical Air Expedite Network" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXN"/>
+    <ShipmentMethodType description="FedEx Custom Critical Point To Point" shipmentMethodTypeId="CSTM_CRTL_CHR_PT_PT"/>
+    <ShipmentMethodType description="FedEx Custom Critical Surface Expedite" shipmentMethodTypeId="CSTM_CRTL_SUR_EX"/>
+    <ShipmentMethodType description="FedEx Custom Critical Surface Expedite Exclusive Use" shipmentMethodTypeId="CSTM_CRTL_SUR_EX_EUS"/>
+    <ShipmentMethodType description="FedEx Distance Deferred" shipmentMethodTypeId="FEDEX_DISTANCE_DEFER"/>
+    <ShipmentMethodType description="FedEx Europe First" shipmentMethodTypeId="EU_FRST_INTNL_PR"/>
+    <ShipmentMethodType description="FedEx Express Saver®" shipmentMethodTypeId="FEDEX_EXPRESS_SAVER"/>
+    <ShipmentMethodType description="FedEx First Overnight®" shipmentMethodTypeId="FIRST_OVERNIGHT"/>
+    <ShipmentMethodType description="FedEx First Overnight® EH" shipmentMethodTypeId="FDX_FT_OVRNT_EXT_HR"/>
+    <ShipmentMethodType description="FedEx Ground" shipmentMethodTypeId="FEDEX_GROUND"/>
+    <ShipmentMethodType description="FedEx Home Delivery®" shipmentMethodTypeId="GROUND_HOME_DELIVER"/>
+    <ShipmentMethodType description="FedEx International Airport-to-Airport" shipmentMethodTypeId="FDX_CRGO_ARPR_ARPR"/>
+    <ShipmentMethodType description="FedEx International Connect Plus®" shipmentMethodTypeId="FDX_INTNL_CNCT_PLUS"/>
+    <ShipmentMethodType description="FedEx International Economy" shipmentMethodTypeId="INTNAL_ECONOMY"/>
+    <ShipmentMethodType description="FedEx International Economy DirectDistributionSM" shipmentMethodTypeId="INTNAL_ECONMY_DISTR"/>
+    <ShipmentMethodType description="FedEx International First®" shipmentMethodTypeId="INTERNATIONAL_FIRST"/>
+    <ShipmentMethodType description="FedEx International MailService®" shipmentMethodTypeId="FEDEX_CARGO_MAIL"/>
+    <ShipmentMethodType description="FedEx International Premium™" shipmentMethodTypeId="FDX_CARGO_INTNL_PR"/>
+    <ShipmentMethodType description="FedEx International Priority DirectDistribution®" shipmentMethodTypeId="INTNL_PR_DISTRI"/>
+    <ShipmentMethodType description="FedEx International Priority® Express" shipmentMethodTypeId="FEDEX_INTNAL_PR_EX"/>
+    <ShipmentMethodType description="FedEx International Priority® (New IP Service)" shipmentMethodTypeId="FEDEX_INTNAL_PR"/>
+    <ShipmentMethodType description="FedEx International Priority Plus®" shipmentMethodTypeId="FEDEX_INTNAL_PR_PL"/>
+    <ShipmentMethodType description="FedEx Priority Overnight®" shipmentMethodTypeId="PRIORITY_OVERNIGHT"/>
+    <ShipmentMethodType description="FedEx Priority Overnight® EH" shipmentMethodTypeId="PR_OVRNIGHT_EXT_HRS"/>
+    <ShipmentMethodType description="FedEx SameDay®" shipmentMethodTypeId="SAME_DAY"/>
+    <ShipmentMethodType description="FedEx SameDay® City" shipmentMethodTypeId="SAME_DAY_CITY"/>
+    <ShipmentMethodType description="FedEx Ground® Economy (Formerly known as FedEx SmartPost®)" shipmentMethodTypeId="SMART_POST"/>
+    <ShipmentMethodType description="FedEx Standard Overnight® EH" shipmentMethodTypeId="FEDEX_STD_ON_EX_HRS"/>
+    <ShipmentMethodType description="FedEx Standard Overnight®" shipmentMethodTypeId="STANDARD_OVERNIGHT"/>
+    <ShipmentMethodType description="FedEx Transborder Distribution" shipmentMethodTypeId="TRANSB_DISTR_CONSN"/>
+    <ShipmentMethodType description="FEDEX Temp-Assure Air®" shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_A"/>
+    <ShipmentMethodType description="FEDEX Temp-Assure Validated Air®" shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_V"/>
+    <ShipmentMethodType description="FEDEX White Glove Services®" shipmentMethodTypeId="CSTM_CRTCL_WT_GLV_S"/>
+    <ShipmentMethodType description="FedEx Regional Economy®" shipmentMethodTypeId="FEDEX_REGIONAL_ECNM"/>
+    <ShipmentMethodType description="FedEx Regional Economy® Freight" shipmentMethodTypeId="FDX_RGNL_ECNM_FR"/>
+    <ShipmentMethodType description="FedEx International Priority® (Old IP Service)" shipmentMethodTypeId="INTERNATIONAL_PR"/>
+    <ShipmentMethodType description="FedEx 1 Day Freight" shipmentMethodTypeId="FEDEX_1_DAY_FREIGHT"/>
+    <ShipmentMethodType description="FedEx 2 Day Freight" shipmentMethodTypeId="FEDEX_2_DAY_FREIGHT"/>
+    <ShipmentMethodType description="FedEx 3 Day Freight" shipmentMethodTypeId="FEDEX_3_DAY_FREIGHT"/>
+    <ShipmentMethodType description="FedEx First Overnight Freight" shipmentMethodTypeId="FIRST_OVERNIGHT_FR"/>
+    <ShipmentMethodType description="FedEx Next Day Afternoon" shipmentMethodTypeId="FEDEX_NEXT_DAY_AF"/>
+    <ShipmentMethodType description="FedEx Next Day Morning" shipmentMethodTypeId="FDX_NEXT_DAY_ERL_MR"/>
+    <ShipmentMethodType description="FedEx Next Day End of Day" shipmentMethodTypeId="FDX_NXT_DY_ED_OF_DY"/>
+    <ShipmentMethodType description="FedEx Next Day Mid Morning" shipmentMethodTypeId="FDX_NXT_DY_MID_MRNG"/>
+    <ShipmentMethodType description="FedEx Next Day Freight" shipmentMethodTypeId="FEDEX_NEXT_DAY_FR"/>
+    <ShipmentMethodType description="FEDEX International Economy Freight" shipmentMethodTypeId="INTNL_ECNM_FR"/>
+    <ShipmentMethodType description="FEDEX International Priority Freight" shipmentMethodTypeId="INTNL_PR_FREIGHT"/-->
+    
+    
+    
+    
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_2_DAY" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="1" carrierServiceCode="FEDEX_2_DAY"/>
+    <!-- CarrierShipmentMethod shipmentMethodTypeId="FEDEX_2_DAY_AM" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="2" carrierServiceCode="FEDEX_2_DAY_AM"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_CHR_AR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="3" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_CHARTER_AIR"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EX" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="4" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_AIR_EXPEDITE"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXU" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="5" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_AIR_EXPEDITE_EXCLUSIVE_USE"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXN" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="6" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_AIR_EXPEDITE_NETWORK"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_CHR_PT_PT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="7" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_POINT_TO_POINT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_SUR_EX" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="8" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_SURFACE_EXPEDITE"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTL_SUR_EX_EUS" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="9" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_SURFACE_EXPEDITE_EXCLUSIVE_USE"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_DISTANCE_DEFER" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="10" carrierServiceCode="FEDEX_DISTANCE_DEFERRED"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="EU_FRST_INTNL_PR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="11" carrierServiceCode="EUROPE_FIRST_INTERNATIONAL_PRIORITY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_EXPRESS_SAVER" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="12" carrierServiceCode="FEDEX_EXPRESS_SAVER"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FIRST_OVERNIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="13" carrierServiceCode="FIRST_OVERNIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_FT_OVRNT_EXT_HR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="14" carrierServiceCode="FEDEX_FIRST_OVERNIGHT_EXTRA_HOURS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_GROUND" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="15" carrierServiceCode="FEDEX_GROUND"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="GROUND_HOME_DELIVER" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="16" carrierServiceCode="GROUND_HOME_DELIVERY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_CRGO_ARPR_ARPR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="17" carrierServiceCode="FEDEX_CARGO_AIRPORT_TO_AIRPORT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_INTNL_CNCT_PLUS" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="18" carrierServiceCode="FEDEX_INTERNATIONAL_CONNECT_PLUS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTNAL_ECONOMY" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="19" carrierServiceCode="INTERNATIONAL_ECONOMY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTNAL_ECONMY_DISTR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="20" carrierServiceCode="INTERNATIONAL_ECONOMY_DISTRIBUTION"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTERNATIONAL_FIRST" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="21" carrierServiceCode="INTERNATIONAL_FIRST"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_CARGO_MAIL" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="22" carrierServiceCode="FEDEX_CARGO_MAIL"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_CARGO_INTNL_PR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="23" carrierServiceCode="FEDEX_CARGO_INTERNATIONAL_PREMIUM"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTNL_PR_DISTRI" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="24" carrierServiceCode="INTERNATIONAL_PRIORITY_DISTRIBUTION"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_INTNAL_PR_EX" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="25" carrierServiceCode="FEDEX_INTERNATIONAL_PRIORITY_EXPRESS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_INTNAL_PR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="26" carrierServiceCode="FEDEX_INTERNATIONAL_PRIORITY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_INTNAL_PR_PL" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="27" carrierServiceCode="FEDEX_INTERNATIONAL_PRIORITY_PLUS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="PRIORITY_OVERNIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="28" carrierServiceCode="PRIORITY_OVERNIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="PR_OVRNIGHT_EXT_HRS" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="29" carrierServiceCode="PRIORITY_OVERNIGHT_EXTRA_HOURS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="SAME_DAY" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="30" carrierServiceCode="SAME_DAY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="SAME_DAY_CITY" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="31" carrierServiceCode="SAME_DAY_CITY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="SMART_POST" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="32" carrierServiceCode="SMART_POST"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_STD_ON_EX_HRS" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="33" carrierServiceCode="FEDEX_STANDARD_OVERNIGHT_EXTRA_HOURS"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="STANDARD_OVERNIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="34" carrierServiceCode="STANDARD_OVERNIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="TRANSB_DISTR_CONSN" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="35" carrierServiceCode="TRANSBORDER_DISTRIBUTION_CONSOLIDATION"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_A" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="36" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_TEMP_ASSURE_AIR"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_V" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="37" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_TEMP_ASSURE_VALIDATED_AIR"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="CSTM_CRTCL_WT_GLV_S" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="38" carrierServiceCode="FEDEX_CUSTOM_CRITICAL_WHITE_GLOVE_SERVICES"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_REGIONAL_ECNM" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="39" carrierServiceCode="FEDEX_REGIONAL_ECONOMY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_RGNL_ECNM_FR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="40" carrierServiceCode="FEDEX_REGIONAL_ECONOMY_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTERNATIONAL_PR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="41" carrierServiceCode="INTERNATIONAL_PRIORITY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_1_DAY_FREIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="42" carrierServiceCode="FEDEX_1_DAY_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_2_DAY_FREIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="43" carrierServiceCode="FEDEX_2_DAY_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_3_DAY_FREIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="44" carrierServiceCode="FEDEX_3_DAY_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FIRST_OVERNIGHT_FR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="45" carrierServiceCode="FIRST_OVERNIGHT_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_NEXT_DAY_AF" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="46" carrierServiceCode="FEDEX_NEXT_DAY_AFTERNOON"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_NEXT_DAY_ERL_MR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="47" carrierServiceCode="FEDEX_NEXT_DAY_EARLY_MORNING"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_NXT_DY_ED_OF_DY" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="48" carrierServiceCode="FEDEX_NEXT_DAY_END_OF_DAY"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FDX_NXT_DY_MID_MRNG" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="49" carrierServiceCode="FEDEX_NEXT_DAY_MID_MORNING"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="FEDEX_NEXT_DAY_FR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="50" carrierServiceCode="FEDEX_NEXT_DAY_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTNL_ECNM_FR" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="51" carrierServiceCode="INTERNATIONAL_ECONOMY_FREIGHT"/>
+    <CarrierShipmentMethod shipmentMethodTypeId="INTNL_PR_FREIGHT" partyId="FEDEX_RT" roleTypeId="CARRIER" sequenceNumber="52" carrierServiceCode="INTERNATIONAL_PRIORITY_FREIGHT"/-->
+    
+    <ShipmentGatewayConfigType shipmentGatewayConfTypeId="SHIP_GATEWAY_FDX_RT" hasTable="Y" description="Shipment Gateway Fedex Rate API"/>
+    <ShipmentGatewayConfig shipmentGatewayConfigId="FEDEX_RT_CONFIG" shipmentGatewayConfTypeId="SHIP_GATEWAY_FDX_RT" description="Fedex Rate API Config"/>
+    <ShipmentGatewayFedexRate shipmentGatewayConfigId="FEDEX_RT_CONFIG" productStoreId="9000" authUrl="https://apis-sandbox.fedex.com/oauth/token" rateUrl="https://apis-sandbox.fedex.com/rate/v1/rates/quotes" grantType="client_credentials" clientId="l74944900784b24c638911672cd935ae20" clientSecret="788a6a752b5942dea412ddad2aee42ae" accountNumber="740561073" pickupType="DROPOFF_AT_FEDEX_LOCATION" emailMessage="Test message from RUGSUSA" notificationFormatType="HTML" notificationType="EMAIL" packageDimensions="IN" defaultPackagingType="YOUR_PACKAGING"/>
+    
+    
+    <ProductStoreShipmentMeth productStoreShipMethId="9001" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_2_DAY" serviceName="fedexRateAndTransitTimes" sequenceNumber="1" shipmentGatewayConfigId="FEDEX_RT_CONFIG"/>
+    <!-- ProductStoreShipmentMeth productStoreShipMethId="9002" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_2_DAY_AM" serviceName="fedexRateAndTransitTimes" sequenceNumber="2"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9003" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_CHR_AR" serviceName="fedexRateAndTransitTimes" sequenceNumber="3"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9004" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EX" serviceName="fedexRateAndTransitTimes" sequenceNumber="4"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9005" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXU" serviceName="fedexRateAndTransitTimes" sequenceNumber="5"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9006" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXN" serviceName="fedexRateAndTransitTimes" sequenceNumber="6"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9007" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_CHR_PT_PT" serviceName="fedexRateAndTransitTimes" sequenceNumber="7"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9008" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_SUR_EX" serviceName="fedexRateAndTransitTimes" sequenceNumber="8"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9009" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTL_SUR_EX_EUS" serviceName="fedexRateAndTransitTimes" sequenceNumber="9"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9010" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_DISTANCE_DEFER" serviceName="fedexRateAndTransitTimes" sequenceNumber="10"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9011" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="EU_FRST_INTNL_PR" serviceName="fedexRateAndTransitTimes" sequenceNumber="11"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9012" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_EXPRESS_SAVER" serviceName="fedexRateAndTransitTimes" sequenceNumber="12"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9013" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FIRST_OVERNIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="13"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9014" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_FT_OVRNT_EXT_HR" serviceName="fedexRateAndTransitTimes" sequenceNumber="14"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9015" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_GROUND" serviceName="fedexRateAndTransitTimes" sequenceNumber="15"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9016" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="GROUND_HOME_DELIVER" serviceName="fedexRateAndTransitTimes" sequenceNumber="16"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9017" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_CRGO_ARPR_ARPR" serviceName="fedexRateAndTransitTimes" sequenceNumber="17"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9018" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_INTNL_CNCT_PLUS" serviceName="fedexRateAndTransitTimes" sequenceNumber="18"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9019" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTNAL_ECONOMY" serviceName="fedexRateAndTransitTimes" sequenceNumber="19"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9020" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTNAL_ECONMY_DISTR" serviceName="fedexRateAndTransitTimes" sequenceNumber="20"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9021" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTERNATIONAL_FIRST" serviceName="fedexRateAndTransitTimes" sequenceNumber="21"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9022" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_CARGO_MAIL" serviceName="fedexRateAndTransitTimes" sequenceNumber="22"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9023" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_CARGO_INTNL_PR" serviceName="fedexRateAndTransitTimes" sequenceNumber="23"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9024" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTNL_PR_DISTRI" serviceName="fedexRateAndTransitTimes" sequenceNumber="24"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9025" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_INTNAL_PR_EX" serviceName="fedexRateAndTransitTimes" sequenceNumber="25"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9026" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_INTNAL_PR" serviceName="fedexRateAndTransitTimes" sequenceNumber="26"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9027" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_INTNAL_PR_PL" serviceName="fedexRateAndTransitTimes" sequenceNumber="27"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9028" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="PRIORITY_OVERNIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="28"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9029" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="PR_OVRNIGHT_EXT_HRS" serviceName="fedexRateAndTransitTimes" sequenceNumber="29"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9030" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="SAME_DAY" serviceName="fedexRateAndTransitTimes" sequenceNumber="30"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9031" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="SAME_DAY_CITY" serviceName="fedexRateAndTransitTimes" sequenceNumber="31"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9032" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="SMART_POST" serviceName="fedexRateAndTransitTimes" sequenceNumber="32"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9033" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_STD_ON_EX_HRS" serviceName="fedexRateAndTransitTimes" sequenceNumber="33"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9034" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="STANDARD_OVERNIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="34"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9035" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="TRANSB_DISTR_CONSN" serviceName="fedexRateAndTransitTimes" sequenceNumber="35"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9036" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_A" serviceName="fedexRateAndTransitTimes" sequenceNumber="36"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9037" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_V" serviceName="fedexRateAndTransitTimes" sequenceNumber="37"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9038" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="CSTM_CRTCL_WT_GLV_S" serviceName="fedexRateAndTransitTimes" sequenceNumber="38"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9039" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_REGIONAL_ECNM" serviceName="fedexRateAndTransitTimes" sequenceNumber="39"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9040" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_RGNL_ECNM_FR" serviceName="fedexRateAndTransitTimes" sequenceNumber="40"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9041" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTERNATIONAL_PR" serviceName="fedexRateAndTransitTimes" sequenceNumber="41"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9042" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_1_DAY_FREIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="42"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9043" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_2_DAY_FREIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="43"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9044" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_3_DAY_FREIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="44"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9045" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FIRST_OVERNIGHT_FR" serviceName="fedexRateAndTransitTimes" sequenceNumber="45"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9046" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_NEXT_DAY_AF" serviceName="fedexRateAndTransitTimes" sequenceNumber="46"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9047" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_NEXT_DAY_ERL_MR" serviceName="fedexRateAndTransitTimes" sequenceNumber="47"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9048" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_NXT_DY_ED_OF_DY" serviceName="fedexRateAndTransitTimes" sequenceNumber="48"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9049" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FDX_NXT_DY_MID_MRNG" serviceName="fedexRateAndTransitTimes" sequenceNumber="49"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9050" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="FEDEX_NEXT_DAY_FR" serviceName="fedexRateAndTransitTimes" sequenceNumber="50"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9051" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTNL_ECNM_FR" serviceName="fedexRateAndTransitTimes" sequenceNumber="51"/>
+    <ProductStoreShipmentMeth productStoreShipMethId="9052" productStoreId="9000" partyId="FEDEX_RT" includeNoChargeItems="N" roleTypeId="CARRIER" shipmentMethodTypeId="INTNL_PR_FREIGHT" serviceName="fedexRateAndTransitTimes" sequenceNumber="52"/-->
+    
+    
+    
+    <ShipmentCostEstimate productStoreShipMethId="9001" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_2_DAY" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <!-- ShipmentCostEstimate productStoreShipMethId="9002" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_2_DAY_AM" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9003" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_CHR_AR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9004" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EX" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9005" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXU" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9006" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_CHR_AR_EXN" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9007" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_CHR_PT_PT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9008" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_SUR_EX" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9009" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTL_SUR_EX_EUS" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9010" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_DISTANCE_DEFER" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9011" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="EU_FRST_INTNL_PR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9012" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_EXPRESS_SAVER" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9013" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FIRST_OVERNIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9014" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_FT_OVRNT_EXT_HR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9015" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_GROUND" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9016" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="GROUND_HOME_DELIVER" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9017" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_CRGO_ARPR_ARPR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9018" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_INTNL_CNCT_PLUS" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9019" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTNAL_ECONOMY" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9020" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTNAL_ECONMY_DISTR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9021" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTERNATIONAL_FIRST" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9022" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_CARGO_MAIL" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9023" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_CARGO_INTNL_PR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9024" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTNL_PR_DISTRI" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9025" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_INTNAL_PR_EX" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9026" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_INTNAL_PR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9027" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_INTNAL_PR_PL" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9028" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="PRIORITY_OVERNIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9029" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="PR_OVRNIGHT_EXT_HRS" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9030" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="SAME_DAY" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9031" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="SAME_DAY_CITY" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9032" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="SMART_POST" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9033" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_STD_ON_EX_HRS" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9034" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="STANDARD_OVERNIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9035" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="TRANSB_DISTR_CONSN" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9036" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_A" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9037" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTCL_TMP_AS_V" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9038" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="CSTM_CRTCL_WT_GLV_S" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9039" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_REGIONAL_ECNM" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9040" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_RGNL_ECNM_FR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9041" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTERNATIONAL_PR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9042" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_1_DAY_FREIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9043" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_2_DAY_FREIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9044" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_3_DAY_FREIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9045" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FIRST_OVERNIGHT_FR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9046" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_NEXT_DAY_AF" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9047" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_NEXT_DAY_ERL_MR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9048" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_NXT_DY_ED_OF_DY" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9049" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FDX_NXT_DY_MID_MRNG" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9050" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="FEDEX_NEXT_DAY_FR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9051" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTNL_ECNM_FR" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/>
+    <ShipmentCostEstimate productStoreShipMethId="9052" productStoreId="9000" orderFlatPrice="0.0" orderItemFlatPrice="0.0" orderPricePercent="0.0" shipmentMethodTypeId="INTNL_PR_FREIGHT" carrierPartyId="FEDEX_RT" carrierRoleTypeId="CARRIER"/-->
+    
+    
+</entity-engine-xml>
